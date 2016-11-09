@@ -1,0 +1,173 @@
+body,ul,li{ margin:0; padding: 0;}
+li{ list-style: none; }
+body{ background: #95f3f4;}
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+/*云*/
+.cloud{position: fixed; top:0; left:0;} 
+.cloud-main{width:120px; height: 60px; background: #fff; position: absolute;}
+.cloud-left{width:70px ; height: 70px; background: #fff; border-radius: 50%; position: absolute;bottom: 0; left: -30px;}
+.cloud-right{width:60px ; height: 60px; background: #fff; border-radius: 50%; position: absolute;bottom: 0; right: -30px;}
+.cloud-left-top{width:50px ; height: 50px; background: #fff; border-radius: 50%; position: absolute;top:-35px; left: 0px;}
+.cloud-right-top{width:90px ; height: 90px; background: #fff; border-radius: 50%; position: absolute;top:-60px; right: -5px;}
+/*牌子*/
+.title{position: fixed;height: 150px;width:300px;}
+.stage {height: 150px;width: 300px;margin: auto;position: absolute;perspective: 9999px;transform-style: preserve-3d;}
+.layer {width: 100%;height: 100%;position: absolute;transform-style: preserve-3d;opacity: 0;animation: gll 5s infinite alternate ease-in-out -7.5s, gl 0.1s 1;animation-fill-mode: forwards;transform: rotateY(40deg) rotateX(33deg) translateZ(0);}
+.layer:after {font: 80px/0.65 'Pacifico', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;content: '我的简介';white-space: pre;text-align: center;height: 100%;width: 100%;position: absolute; top: 50px;color: whitesmoke;letter-spacing: -2px;text-shadow: 4px 0 10px rgba(0, 0, 0, 0.13);}
+.layer-one,.layer-two {width: 100%;height: 100%;position: absolute;transform-style: preserve-3d;opacity: 0;animation: gll 5s infinite alternate ease-in-out -7.5s, gl 0.1s 1;animation-fill-mode: forwards;transform: rotateY(40deg) rotateX(33deg) translateZ(0);}
+.layer-one:after{font: 40px/0.55 '微软雅黑', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;content: '我 的 技 能';white-space: pre;text-align: center;height: 100%;width: 100%;position: absolute; top: 50px;color: whitesmoke;letter-spacing: -2px;text-shadow: 4px 0 5px rgba(0, 0, 0, 0.13);}
+.layer-two:after{font: 40px/0.55 '微软雅黑', 'Kaushan Script', Futura, 'Roboto', 'Trebuchet MS', Helvetica, sans-serif;content: '我 掌 握 的 框 架';white-space: pre;text-align: center;height: 100%;width: 100%;position: absolute; top: 50px;color: whitesmoke;letter-spacing: -2px;text-shadow: 4px 0 5px rgba(0, 0, 0, 0.13);}
+.layer-two:nth-child(1):after ,.layer-one:nth-child(1):after ,.layer:nth-child(1):after {transform: translateZ(0px);}
+.layer-two:nth-child(2):after ,.layer-one:nth-child(2):after ,.layer:nth-child(2):after {transform: translateZ(-2px);}
+.layer-two:nth-child(3):after ,.layer-one:nth-child(3):after ,.layer:nth-child(3):after {transform: translateZ(-4px);}
+.layer-two:nth-child(4):after ,.layer-one:nth-child(4):after ,.layer:nth-child(4):after {transform: translateZ(-6px);}
+.layer-two:nth-child(5):after ,.layer-one:nth-child(5):after ,.layer:nth-child(5):after {transform: translateZ(-8px);}
+.layer-two:nth-child(6):after ,.layer-one:nth-child(6):after ,.layer:nth-child(6):after {transform: translateZ(-10px);}
+.layer-two:nth-child(7):after ,.layer-one:nth-child(7):after ,.layer:nth-child(7):after {transform: translateZ(-12px);}
+.layer-two:nth-child(8):after ,.layer-one:nth-child(8):after ,.layer:nth-child(8):after {transform: translateZ(-14px);}
+.layer-two:nth-child(9):after ,.layer-one:nth-child(9):after ,.layer:nth-child(9):after {transform: translateZ(-16px);}
+.layer-two:nth-child(10):after ,.layer-one:nth-child(10):after ,.layer:nth-child(10):after {transform: translateZ(-18px);}
+.layer-two:nth-child(11):after ,.layer-one:nth-child(11):after ,.layer:nth-child(11):after {transform: translateZ(-20px);}
+.layer-two:nth-child(12):after ,.layer-one:nth-child(12):after ,.layer:nth-child(12):after {transform: translateZ(-22px);}
+.layer-two:nth-child(13):after ,.layer-one:nth-child(13):after ,.layer:nth-child(13):after {transform: translateZ(-24px);}
+.layer-two:nth-child(14):after ,.layer-one:nth-child(14):after ,.layer:nth-child(14):after {transform: translateZ(-26px);}
+.layer-two:nth-child(15):after ,.layer-one:nth-child(15):after ,.layer:nth-child(15):after {transform: translateZ(-28px);}
+.layer-two:nth-child(16):after ,.layer-one:nth-child(16):after ,.layer:nth-child(16):after {transform: translateZ(-30px);}
+.layer-two:nth-child(17):after ,.layer-one:nth-child(17):after ,.layer:nth-child(17):after {transform: translateZ(-32px);}
+.layer-two:nth-child(18):after ,.layer-one:nth-child(18):after ,.layer:nth-child(18):after {transform: translateZ(-34px);}
+.layer-two:nth-child(19):after ,.layer-one:nth-child(19):after ,.layer:nth-child(19):after {transform: translateZ(-36px);}
+.layer-two:nth-child(20):after ,.layer-one:nth-child(20):after ,.layer:nth-child(20):after {transform: translateZ(-38px);}
+.layer-two:nth-child(n+10):after ,.layer-one:nth-child(n+10):after ,.layer:nth-child(n+10):after {-webkit-text-stroke: 3px rgba(0, 0, 0, 0.25);}
+.layer-two:nth-child(n+11):after ,.layer-one:nth-child(n+11):after ,.layer:nth-child(n+11):after {-webkit-text-stroke: 15px #1e90ff;text-shadow: 6px 0 6px #00366b, 5px 5px 5px #002951, 0 6px 6px #00366b;}
+.layer-two:nth-child(n+12):after ,.layer-one:nth-child(n+12):after ,.layer:nth-child(n+12):after {-webkit-text-stroke: 15px #0077ea;}
+.layer-two:last-child:after ,.layer-one:last-child:after ,.layer:last-child:after {-webkit-text-stroke: 17px rgba(0, 0, 0, 0.1);}
+.layer-two:first-child:after ,.layer-one:first-child:after ,.layer:first-child:after {color: #fff;text-shadow: none;}
+@keyframes gll {100% {transform: rotateY(-30deg) rotateX(-30deg);}}
+@keyframes gl {100% {opacity: 1;}}
+/*树1*/
+.tree-one{width:140px; height: 280px;position: fixed; left:0; bottom:200px;}
+.tree-one-main{width:140px; height: 280px; position:absolute;}
+.one-body{width:20%; height:30%;position: absolute; left:40%; bottom: 0; background: #a67c52;}
+.one-one{width:70px;height:0; position: absolute; left: -3%; bottom:30%;border-bottom:60px solid #3ab54a; border-left:40px solid transparent; border-right: 40px solid transparent;}
+.one-two{width:50px;height:0; position: absolute; left: 4%; bottom:51%;border-bottom:60px solid #3ab54a; border-left:40px solid transparent; border-right: 40px solid transparent;}
+.one-three{width:0;height:0; position: absolute; left: 22%; bottom:72%;border-bottom:60px solid #3ab54a; border-left:40px solid transparent; border-right: 40px solid transparent;}
+/*树2*/
+.tree-two{width:200px; height:350px;position: fixed; left:0; bottom:200px;}
+.tree-two-main{width:200px; height:350px; position:absolute;}
+.two-body{width:20%; height:30%;position: absolute; left:40%; bottom: 0; background: #a17f4f;}
+.two-one{width:120px;height:0; position: absolute; left: 0%; bottom:30%;border-bottom:60px solid #8dc73f; border-left:40px solid transparent; border-right: 40px solid transparent;}
+.two-two{width:80px;height:0; position: absolute; left: 8%; bottom:47%;border-bottom:60px solid #8dc73f; border-left:40px solid transparent; border-right: 40px solid transparent;}
+.two-three{width:60px;height:0; position: absolute; left:13%; bottom:64%;border-bottom:60px solid #8dc73f; border-left:40px solid transparent; border-right: 40px solid transparent;}
+.two-four{width:0;height:0; position: absolute; left:27%; bottom:81%;border-bottom:60px solid #8dc73f; border-left:40px solid transparent; border-right: 40px solid transparent;}
+/*门*/
+.door{width:320px; height: 400px; position: fixed; bottom: 200px;}
+.door-main{position: absolute;}
+.door-top{width:280px; height: 100px; display: block;background: #ed1b24;position: absolute; left: 0; top: 0; text-align: center; color: #fff; font-size: 40px; line-height: 100px; font-family: "微软雅黑"; font-weight: 800;}
+.door-left-one{width:40px; height: 300px; display: block;background: #ed1b24;position: absolute; left: 0;top:100px;}
+.door-left-two{width:40px; height: 300px; display: block;background: #bc0018;position: absolute; left:40px;top:100px;}
+.door-right-one{width:40px; height: 300px; display: block;background: #ed1b24;position: absolute; left:240px;top:100px;}
+.door-right-two{width:40px; height: 400px; display: block;background: #bc0018;position: absolute; left:280px;top:0px;}
+/*小标签1*/
+.sign{width:auto; height: 40px; position: fixed;}
+.sign-main{position: absolute;}
+.sign-main i{width:auto; height: 40px;display: block; font-size: 28px;  line-height: 40px; /*background: #fff; border-radius: 4px; box-shadow: 5px 5px 5px #e0e0e0;*/}
+.sign-main span{width:auto; height: 40px;display: block;margin: 0 10px; font-family: "微软雅黑"; color: #cffa08; font-weight:800; text-shadow: 0px 7px 5px #f97335;}
+/*小标签2*/
+.signs{width: 770px; height:100px; position: fixed;}
+.signs-main{position: absolute; height:100px;}
+.signs-main i{width:100%; height: 2px; display: block; background: #fff; position: absolute;left: 0; top: 0;}
+.signs-main span{width: 100%; height: 30px; font-size: 24px; color: #fff; line-height: 30px; margin-left: 10px; position: absolute; left:-120px; top:10px; font-family: "微软雅黑"; font-weight: 800; display: inline-block;}
+/*砖头*/
+.stone{width:200px; height: 100px;position: fixed;left: 1200px; bottom: 200px;}
+.stone-main{position: absolute;width:400px; height: 100px; overflow:hidden; background: #3ab54a; border-top-left-radius: 8px; border-top-right-radius: 8px;}
+.stone-main i{width: 400px; height: 400px; border-radius: 50%; display: block; position: absolute; left: 0; top:-350px; background: #95f3f3;}
+/*程度*/
+.cheng{width: 70px; height: 70px;position: fixed; }
+.cheng-main,.cheng1-main,.cheng2-main,.cheng3-main{position: absolute; margin: 0 auto;width:70px;height: 70px;border-radius: 50%;
+font-weight:800;color: #003A6F;animation: spinZ 20s linear infinite;text-align: center;}
+.cheng4-main{position: absolute; margin: 0 auto;width:400px;height:400px;border-radius: 50%;
+font-weight:800;color: #f59421;animation: spinZ 20s linear infinite;text-align: center; }
+.cheng-main span,.cheng1-main span,.cheng2-main span,.cheng3-main span{ position: absolute;display: inline-block;text-transform: uppercase;font-size:12px;transition: all 0.5s cubic-bezier(0, 0, 0, 1);left: 0;right: 0;top: 0;bottom: 0;}
+.cheng4-main span {position: absolute;display: inline-block;text-transform: uppercase;font-size:30px;transition: all 0.5s cubic-bezier(0, 0, 0, 1);left: 0;right: 0;top: 0;bottom: 0;}
+@keyframes spinZ {0% {transform: rotateZ(360deg);}
+	              100% {transform: rotateZ(0deg);}
+	}
+/*风车*/
+.feng{width:100px;height:100px;position: fixed;}
+.feng-main{position: absolute;width:100px;}
+@-webkit-keyframes rotate{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}
+@-moz-keyframes rotate{from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(359deg)}}
+@-o-keyframes rotate{from{-o-transform:rotate(0deg)}to{-o-transform:rotate(359deg)}}
+@keyframes rotate{from{transform:rotate(0deg)}to{transform:rotate(359deg)}}
+@-webkit-keyframes rotate2{from{-webkit-transform:rotate(0deg)}to{-webkit-transform:rotate(360deg)}}
+@-moz-keyframes rotate2{from{-moz-transform:rotate(0deg)}to{-moz-transform:rotate(359deg)}}
+@-o-keyframes rotate2{from{-o-transform:rotate(0deg)}to{-o-transform:rotate(359deg)}}
+@keyframes rotate2{from{transform:rotate(0deg)}to{transform:rotate(359deg)}}
+ 
+.windmill2 {display:block;position:absolute;width: 100px;height: 300px;left: 0;bottom:0px;}
+ .windmill2 .pillar{  position:absolute;top:8px;left:44px;display: block;height: 0;width: 4px;border-width: 0 4px 300px 4px;border-style: none solid solid;border-color: transparent transparent white;}
+.windmill2 .axis{position:absolute;top:0px;left:46px;width:4px;height:4px;border:3px #fff solid;background:#a5cad6;border-radius:5px;z-index: 88;-webkit-transition-property:-webkit-transform;-webkit-transition-duration: 1s;
+-moz-transition-property: -moz-transform;-moz-transition-duration: 1s;-webkit-animation: rotate 4s linear infinite;-moz-animation: rotate 4s linear infinite;-o-animation: rotate 4s linear infinite;animation: rotate 4s linear infinite;} 
+.windmill2 .swing{position:absolute;top:1px;left:-2px;display: block;height: 0;width: 2px;border-width: 50px 2px 0px 2px;border-style: solid solid none;border-color: white transparent transparent ;box-shadow: 1px 1px 1px rgba(105, 97, 97, 0.1);-webkit-transform-origin:0px 0px;-webkit-transform:rotate(60deg);-moz-transform-origin:0px 0px;-moz-transform:rotate(60deg);-ms-transform-origin:0px 0px;-ms-transform:rotate(60deg);
+-o-transform-origin:0px 0px;-o-transform:rotate(60deg);transform-origin:0px 0px;transform:rotate(60deg);} 
+.windmill2 .swing2{position:absolute;top:0px;left:4.5px;display: block;height: 0;width: 2px;border-width: 50px 2px 0px 2px;border-style: solid solid none;border-color: white transparent transparent ;-webkit-transform-origin:0px 0px;-webkit-transform:rotate(180deg);-moz-transform-origin:0px 0px;-moz-transform:rotate(180deg);-ms-transform-origin:0px 0px;-ms-transform:rotate(180deg);-o-transform-origin:0px 0px;-o-transform:rotate(180deg);transform-origin:0px 0px;transform:rotate(180deg);} 
+.windmill2 .swing3{position:absolute;top:6px;left:3px;display: block;height: 0;width: 2px;border-width: 50px 2px 0px 2px;border-style: solid solid none;border-color: white transparent transparent ;-webkit-transform-origin:0px 0px;-webkit-transform:rotate(300deg);-moz-transform-origin:0px 0px;-moz-transform:rotate(300deg);-ms-transform-origin:0px 0px;-ms-transform:rotate(300deg);-o-transform-origin:0px 0px;-o-transform:rotate(300deg);transform-origin:0px 0px;transform:rotate(300deg);} 
+.windmill2 .axis:hover {-webkit-animation: rotate2 .3s linear infinite;-moz-animation: rotate2 .3s linear infinite;-o-animation: rotate2 .3s linear infinite;animation: rotate2 .3s linear infinite;} 
+/*鸟*/
+.birds{position: fixed;}
+.birds-main{width:70px; height: 50px; position: absolute;}
+.birds-main img{width: 100%; height: 100%;}
+/*山*/
+.mountain{position: fixed;left: 0; bottom:200px;}
+.mountain-box{width:800px; height: 400px;position:absolute; left:0;bottom:0;}
+.mountain-left{width: 0;height: 0;border-bottom:400px solid #c69c6c;border-left:400px solid transparent; float: left;}
+.mountain-right{width: 0;height: 0;border-bottom:400px solid #8c6238;border-right:400px solid transparent; float: left;}
+/*敬请期待*/
+.ing{width:400px; height: 150px; position: fixed;}
+.ing-main{width:400px; height: 150px; position: absolute; font-family: "微软雅黑"; font-size: 40px; line-height: 150px; color: #fff; text-align: center;}
+/*人物造型*/
+.person{width:200px;height: 400px;position: fixed; bottom:0px; left: 50%; margin-left: -20px;}
+.person-main{position: absolute;left:0; bottom:0;width:200px;height: 400px;transform: translate(-50%, -50%);}
+.person div,.person span{position: absolute;}
+.item {width: 200px;height: 200px;bottom: 10px;left: 50%;margin-left: -50px;-webkit-transform-origin: center bottom;transform-origin: center bottom;}
+.item .chewing {width: 100px;height: 100px;bottom: 0;left: 50%;margin-left: -50px;box-shadow: inset 10px -6px 10px rgba(0, 0, 0, 0.1);border-radius: 50% 50% 50% 50%/60% 60% 40% 40%;-webkit-animation: bounce 0.6s ease-in-out infinite;animation: bounce 0.6s ease-in-out infinite;}
+.item .chewing .eye {background: #fff;border-radius: 50%;border-top: 2px solid #111;}
+.item .chewing .eye span {width: 4px;height: 4px;background: #232323;border-radius: 2px;}
+.item .chewing .eye.left {top: 30px;left: 20px;width: 30px;height: 29px;-webkit-transform: rotate(-10deg);transform: rotate(-10deg);}
+.item .chewing .eye.left span {top: 14px;left: 15px;}
+.item .chewing .eye.right {top: 35px;right: 20px;width: 20px;height: 20px;-webkit-transform: rotate(10deg);transform: rotate(10deg);}
+.item .chewing .eye.right span {top: 9px;left: 7px;}
+.item .chewing .mounth {width: 16px;height: 4px;bottom: 20px;background: #fff;border-radius: 50% 50% 100% 100%;}
+.item .chewing .arm {width: 15px;height: 16px;bottom: 28px;border-radius: 7px;z-index: -1;-webkit-animation: arm-bounce 0.7s ease-in infinite;animation: arm-bounce 0.7s ease-in infinite;}
+.item .chewing .arm.left {left: -13px;-webkit-transform: rotate(-20deg);transform: rotate(-20deg);}
+.item .chewing .arm.right {right: -13px;-webkit-transform: rotate(20deg);transform: rotate(20deg);}
+.item .shadow {width: 70px;height: 10px;bottom: -10px;left: 0;right: 0;margin: auto;border-radius: 50%;background: #37a45b;box-shadow: 0 0 5px #37a45b;-webkit-animation: shadow 0.7s ease-in-out infinite;animation: shadow 0.7s ease-in-out infinite;-webkit-animation-delay: 0.3s;animation-delay: 0.3s;}
+.item#blue {left: 64%;z-index: 20;-webkit-transform: scale(1.4);transform: scale(1.4);}
+.item#blue .chewing {background: royalblue;-webkit-animation-delay: 0.4s;animation-delay: 0.4s;}
+.item#blue .mounth {left: 37px;width: 20px;height: 5px;-webkit-transform: rotate(5deg);transform: rotate(5deg);-webkit-animation: mounth 0.7s ease-in-out infinite;animation: mounth 0.7s ease-in-out infinite;}
+.item#blue .arm {background: royalblue;}
+
+@keyframes bounce {0% {bottom: 0;}
+ 									65% {bottom: 50px;}
+  								100% {bottom: 0; border-radius: 49% 47% 42% 40%/60% 60% 40% 40%;}}
+@keyframes arm-bounce {0%, 100% {bottom: 28px;}
+											33% {bottom: 23px;}
+  										40% {-webkit-transform: scale(0.8);transform: scale(0.8);}
+  										66% {-webkit-transform: scale(1);transform: scale(1);}}
+@keyframes shadow {0%, 100% {-webkit-transform: scaleX(1);transform: scaleX(1);}
+  								50% {-webkit-transform: scaleX(0.9);transform: scaleX(0.9);}}
+@keyframes mounth {0%, 100% {height: 4px;border-radius: 50% 50% 100% 100%;}
+  								50% {height: 8px; bottom: 17px;border-radius: 30% 30% 100% 100%;}}
+/*地板*/
+.floor{ position: fixed; width: 100%; bottom: 0; left: 0; height: 200px;  background: #a67c53;}
+.floor-grass{ height: 25%; background: #8dc63f; }
+.floor-wl{height: 61%; }
+.floor-wl li{ float: left; position: relative; width: 100px; height: 100%;  }
+.floor-wl span{ float: left; width: 50%; height: 30%; background: #8b6139; margin-bottom: 40px;}
+.floor-wl span:nth-child(1){transform:skew(0,-30deg) translate(0,20px);}
+.floor-wl span:nth-child(2){transform:skew(0,30deg) translate(0,20px);}
+.floor-wl span:nth-child(3){transform:skew(0,-30deg) translate(0,20px);}
+.floor-wl span:nth-child(4){transform:skew(0,30deg) translate(0,20px);}
+.floor-wl .arrow{ position: absolute; left: 0; top: -10px;}
+.floor-wl .arrow i{ float: left; width: 0; height: 0; border-width:5px; border-color:transparent transparent #a67c52 transparent; border-style: solid; }
